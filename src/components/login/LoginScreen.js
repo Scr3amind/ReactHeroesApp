@@ -10,7 +10,7 @@ export const LoginScreen = () => {
 
     return (
         <div className="h-screen flex flex-col items-center justify-center bg-comic-pattern bg-repeat bg-contain ">
-            <div className=" flex flex-col h-1/3 w-2/3 justify-evenly rounded-3xl shadow-2xl bg-gray-600 items-center animate__animated animate__fadeIn ">
+            <div className=" flex flex-col h-1/3 w-2/3 justify-evenly rounded-3xl shadow-2xl bg-gray-600 items-center animate__animated animate__bounceIn ">
                 <h1 className="text-center text-6xl text-white">Login Screen</h1>
                 
                 <button 
