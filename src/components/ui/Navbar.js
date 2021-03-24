@@ -23,6 +23,9 @@ export const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className="sm:inline">
+                            <NavLink exact to="/search" activeClassName="text-white font-bold" className="p-3 hover:text-white">Search</NavLink>
+                        </li>
+                        <li className="sm:inline">
                             <NavLink exact to="/login" activeClassName="text-white font-bold" className="p-3 hover:text-white">Login</NavLink>
                         </li>
 
