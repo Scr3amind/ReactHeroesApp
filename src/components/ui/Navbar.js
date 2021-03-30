@@ -1,7 +1,21 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { Link, NavLink, useHistory } from 'react-router-dom'
+import { AuthContext } from '../../auth/AuthContext';
+import { types } from '../../types/types';
 
 export const Navbar = () => {
+    const history = useHistory()
+    const {user, dispatch} = useContext(AuthContext);
+    const {name} = user;
+    const handleLogout = () => {
+        dispatch({
+            type: types.logout,
+            
+        })
+
+        history.replace('/login');
+    }
+
     return (
         <nav className="bg-gradient-to-r from-gray-700 to-black shadow-2xl relative z-10 py-4 animate__animated animate__fadeInDown">
             <div className="container mx-auto">
@@ -26,7 +40,12 @@ export const Navbar = () => {
                             <NavLink exact to="/search" activeClassName="text-white font-bold" className="p-3 hover:text-white">Search</NavLink>
                         </li>
                         <li className="sm:inline">
-                            <NavLink exact to="/login" activeClassName="text-white font-bold" className="p-3 hover:text-white">Login</NavLink>
+                            <button className="p-3 hover:text-white" onClick={handleLogout}>
+                                Logout
+                            </button>
+                        </li>
+                        <li className="sm:inline">
+                            <span className="px-3 text-gray-700 bg-white rounded-lg bg-opacity-80 font-bold">{name}</span>
                         </li>
 
                     </ul>
