@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SearchScreen /> debe de mostrar a batman y el input con el valor del queryString 1`] = `
+<div
+  className="flex flex-col items-center  "
+>
+  <h1
+    className="font-semibold text-2xl"
+  >
+    Search
+  </h1>
+  <form
+    className="text-white"
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="h-14 w-80 outline-none text-xl bg-gray-700 opacity-80 shadow-lg rounded-xl px-2"
+      name="searchText"
+      onChange={[Function]}
+      placeholder="Find your hero"
+      type="text"
+      value="batman"
+    />
+    <button
+      className="ml-5 bg-gray-800 text-white px-5 py-2 rounded-xl shadow-lg"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <div
+    className="flex gap-4 justify-center my-10 flex-wrap "
+  >
+    <div
+      className="flex items-center justify-around h-52 w-72 shadow-lg rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 animate__animated animate__fadeIn"
+    >
+      <div
+        className="flex justify-center w-1/2"
+      >
+        <img
+          alt="Batman"
+          className="rounded-md shadow-lg h-48"
+          src="./assets/heroes/dc-batman.jpg"
+        />
+      </div>
+      <div
+        className="flex flex-col justify-around h-full w-1/2 text-center"
+      >
+        <p
+          className="font-bold"
+        >
+          Batman
+        </p>
+        <p>
+          Bruce Wayne
+        </p>
+        <p
+          className="text-xs"
+        >
+          Detective Comics #27
+        </p>
+        <a
+          className="text-blue-800"
+          href="/hero/dc-batman"
+          onClick={[Function]}
+        >
+          Ver mas...
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en <SearchScreen /> debe de mostrarse correctamente con valores por defecto 1`] = `
+<div
+  className="flex flex-col items-center  "
+>
+  <h1
+    className="font-semibold text-2xl"
+  >
+    Search
+  </h1>
+  <form
+    className="text-white"
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="h-14 w-80 outline-none text-xl bg-gray-700 opacity-80 shadow-lg rounded-xl px-2"
+      name="searchText"
+      onChange={[Function]}
+      placeholder="Find your hero"
+      type="text"
+      value=""
+    />
+    <button
+      className="ml-5 bg-gray-800 text-white px-5 py-2 rounded-xl shadow-lg"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <div
+    className="flex gap-4 justify-center my-10 flex-wrap "
+  />
+</div>
+`;

@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Navbar /> debe de mostrarse correctamente 1`] = `
+<nav
+  className="bg-gradient-to-r from-gray-700 to-black shadow-2xl relative z-10 py-4 animate__animated animate__fadeInDown"
+>
+  <div
+    className="container mx-auto"
+  >
+    <div
+      className="sm:flex justify-around"
+    >
+      <a
+        className="text-white text-3xl font-bold p-3"
+        onClick={[Function]}
+      >
+        Heroes App
+      </a>
+      <ul
+        className="text-gray-400 sm:self-center text-xl border-t sm:border-none"
+      >
+        <li
+          className="sm:inline"
+        >
+          <a
+            aria-current={null}
+            className="p-3 hover:text-white"
+            onClick={[Function]}
+          >
+            Marvel
+          </a>
+        </li>
+        <li
+          className="sm:inline"
+        >
+          <a
+            aria-current={null}
+            className="p-3 hover:text-white"
+            onClick={[Function]}
+          >
+            DC
+          </a>
+        </li>
+        <li
+          className="sm:inline"
+        >
+          <a
+            aria-current={null}
+            className="p-3 hover:text-white"
+            onClick={[Function]}
+          >
+            Search
+          </a>
+        </li>
+        <li
+          className="sm:inline"
+        >
+          <button
+            className="p-3 hover:text-white"
+            onClick={[Function]}
+          >
+            Logout
+          </button>
+        </li>
+        <li
+          className="sm:inline"
+        >
+          <span
+            className="px-3 text-gray-700 bg-white rounded-lg bg-opacity-80 font-bold"
+          >
+            Isaac
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+`;

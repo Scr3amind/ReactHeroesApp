@@ -1,13 +1,12 @@
 import React, { useMemo } from 'react';
 import queryString from 'query-string';
-import { useHistory, useLocation } from 'react-router';
+import { useLocation } from 'react-router';
 import { useForm } from '../../hooks/useForm';
 import { getHeroesByName } from '../../selectors/getHeroesByName';
 import { HeroCard } from '../heroes/HeroCard';
 
-export const SearchScreen = () => {
+export const SearchScreen = ({history}) => {
 
-    const history = useHistory();
     const location = useLocation();
 
     const {q = ''} = queryString.parse(location.search);
